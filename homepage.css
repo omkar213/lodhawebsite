@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --orange: #c29129;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* common class */
+
+/*  */
+body{
+    background-color: grey;
+}
+/*css for navigation bar*/
+ul{
+    list-style: none;
+    height: 50px;
+    background: whitesmoke;
+    width: 78%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+.logo{
+    width: 17%;
+}
+li {
+   display: inline-block;
+   border-right: 1px solid black;
+}
+.nav_link{
+    display: block;
+    text-decoration: none;
+    padding: 15px 13px;
+    color: black;
+}
+.nav_link:hover{
+    background-color: blanchedalmond;
+}
+/*------------------*/
+
+/*css for side bar right*/
+.sidebar {
+   height: 100%;
+   width: 22%;
+   position: fixed;
+   top: 0;
+   right: 0;
+   padding-top: 40px;
+   background-color: rgb(255, 255, 255);
+}
+.rqst-call{
+    width: 158px;
+    height: 36px;
+    margin-left: 70px;
+    font-size: 16px;
+    background: #bd9234;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.form-box{
+    width: 22%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    margin-left: 12%;
+    margin-top: 32%;
+}
+
+.textbox{
+    width: 440%;
+    overflow: hidden;
+    font-size: 18px;
+    border-bottom: 1px solid whitesmoke;
+    border: none;
+    outline: none;
+    background: none;
+    color: gray;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.textbox:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.phone{
+    width: 440%;
+    overflow: hidden;
+    font-size: 18px;
+    border-bottom: 1px solid whitesmoke;
+    border: none;
+    outline: none;
+    background: none;
+    color: gray;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.phone:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.Email{
+    width: 440%;
+    overflow: hidden;
+    font-size: 18px;
+    border-bottom: 1px solid whitesmoke; 
+    border: none;
+    outline: none;
+    background: none;
+    color: gray;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.Email:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.callus{
+    margin-left: 22px;
+    margin-top: -50px;
+    color: black;
+}
+.book-visit{
+    width: 100%;
+    text-align: center;
+    background-color: var(--orange);
+    height: 30px;
+    margin-top: 25px;
+}
+.book-visit a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+.info{
+    margin-top: 29px;
+    margin-left: 23px;
+    font-size: 15px;
+}
+.info h3{
+    color: black;
+}
+
+
+/* Left container css starts from here */
+.innersection{
+   
+}
+
+.bannerImg{
+    width: 78%;
+    height: 630px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.feature_box{
+    max-width: 36%;
+    height: 705px;
+    margin-top: -472px;
+    display: block;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.664);
+    box-shadow: 0 15px 20px rgba(3, 3, 3, 0.322);
+    padding: 50px;
+}
+ /* css for OverView section starts from here */
+.overview{
+    margin-bottom: 12px;
+    background: rgb(255, 255, 255);
+    width: 76%;
+    height: 408px;
+    margin-top: -336px;
+    margin-left: 4px;
+    padding-left: 32px;
+}
+.overview h1{
+    color: #c29129;
+}
+.overview h2,h3{
+    color: #c29129;
+}
+.overview_btn{
+    margin-left: 40%;
+    margin-top: 1%;
+    width: 152px;
+    height: 38px;
+    background: white;
+    color: #c29129;
+    border-color: #c29129;
+    border-width: 0.1px;
+}
+.overview p{
+    font-size: 15px;
+}
+
+/* css for prject highlights */
+.prj_hightlights{
+    margin-bottom: 12px;
+    background: rgb(255, 255, 255);
+    width: 78%;
+    height: 600px;
+    margin-top: 2px;
+}
+.prj_hightlights h2{
+    margin-left: 28%;
+    color: #c29129;
+    font-size: 28px;
+}
+.content-table{
+    border-collapse: collapse;
+    margin-left: 4%;
+    margin-top: 4px;
+    font-size: 16px;
+    min-width: 61%;
+}
+.content-table tr{
+    background: rgb(255, 255, 255);;
+    color: rgb(27, 25, 25);
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #dddddd;
+}
+.content-table td{
+    padding: 12px 15px;
+}
+
+/* css for price section starts  */
+.price{
+    margin-bottom: 12px;
+    background: rgb(255, 251, 251);
+    width: 78%;
+    height: 600px;
+    margin-top: 2px;
+    display: table;
+}
+.content_price{
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee ;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  margin: 42px
+}
+thead{
+   box-shadow: 0 5px 10px #acc2f5;
+}
+th{
+    padding: 14px 29px;;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 900;
+}
+td{
+    padding: 12px 16px;
+}
+.click_here{
+    border-radius:  0.2rem;
+    background-color: #e7b623;
+    color: white;
+    padding: 6px 11px;
+    text-align: center;
+    border: none;
+}
+/* end */
+
+/* css for site and floor plan  */
+.site_floor_plan{
+    width: 78%;
+    height: 600px;
+}
+.master_plan{
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 30%;
+    margin-top: 50px
+}
+.Title{
+    margin-left: 45px;
+}
+.master_img{
+    width: 53%;
+    height: 245px;
+}
+.master_plan_hoverdiv{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -100%;
+    width: 53%;
+    height: 100%;
+    background: rgba(0,0, 0,0.5);
+    z-index: 1;
+    display: flex;
+
+    -webkit-transition: bottom ease-in-out .30s;
+    -moz-transition: bottom ease-in-out .30s;
+    transition: bottom ease-in-out .30s;
+}
+.details{
+    margin-left: 130px;
+    margin-top: 100px;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+.details a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.master_plan:hover .master_plan_hoverdiv{
+    bottom: 0;
+}
+/* ---------------------------------- */
+.floor-plan{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.floorplandiv1{
+    width: 35%;
+    position: relative;
+}
+.floorplandiv2{
+    width: 35%;
+    position: relative;
+}
+.floorplandiv3{
+    width: 35%;
+    position: relative;
+}
+.floor_img{
+    width: 92%;
+    height: 219px;
+}
+.floor_plan_hoverdiv{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    bottom: -100%;
+    width: 92%;
+    height: 73%;
+    background: rgba(0,0, 0,0.5);
+    z-index: 1;
+    display: flex;
+
+    -webkit-transition: bottom ease-in-out .30s;
+    -moz-transition: bottom ease-in-out .30s;
+    transition: bottom ease-in-out .30s;
+}
+/*  */
