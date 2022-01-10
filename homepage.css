@@ -14,7 +14,7 @@ body{
     background-color: grey;
 }
 /*css for navigation bar*/
-ul{
+.navigation-bar{
     list-style: none;
     height: 50px;
     background: whitesmoke;
@@ -27,7 +27,8 @@ ul{
 .logo{
     width: 17%;
 }
-li {
+.nav-item
+{
    display: inline-block;
    border-right: 1px solid black;
 }
@@ -37,8 +38,16 @@ li {
     padding: 15px 13px;
     color: black;
 }
+
 .nav_link:hover{
     background-color: blanchedalmond;
+}
+nav .navigation-bar ul li:active{
+    background-color: #e7b623;
+    transition: 0.3  ease #e7b623;
+}
+nav .navigation-bar ul li:active a{
+    color: whitesmoke;
 }
 /*------------------*/
 
@@ -61,6 +70,7 @@ li {
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 .form-box{
@@ -160,24 +170,87 @@ li {
     background-repeat: no-repeat;
 }
 .feature_box{
-    max-width: 36%;
-    height: 705px;
-    margin-top: -472px;
+    max-width: 16%;
+    height: 433px;
+    margin-top: -317px;
     display: block;
     transform: translate(-50%,-50%);
     background: rgba(0, 0, 0, 0.664);
     box-shadow: 0 15px 20px rgba(3, 3, 3, 0.322);
     padding: 50px;
+    margin-left: 159px;
+}
+.feature-heading{
+    width: 88%;
+    background-color: var(--orange);
+    height: 35px;
+    margin-top: -47px;
+    margin-left: -47px;
+}
+.feature-heading h3{
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: 22px;
+}
+.feature_box h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+.feature_box h4{
+    color: white;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-left: -40px;
+}
+.special_offer{
+    width: 314px;
+    background: var(--orange);
+    margin-left: -50px;
+    justify-content: center;
+    display: flex;
+    margin-top: 28px;
+    height: 212px;
+    padding-top: 9px
+}
+.special_offer ul{
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+.feature_box p{
+    color: whitesmoke;
+    font-size: 19.8px;
+    margin-left: -39px;
+    margin-top: 10px;
+}
+.feature_box h6{
+    color: white;
+    font-size: 28px;
+}
+.imgRupee{
+    width: 22px;
+    height: 20px;
+    margin-left: -42px;
+    margin-top: 19px;
 }
  /* css for OverView section starts from here */
 .overview{
     margin-bottom: 12px;
     background: rgb(255, 255, 255);
     width: 76%;
-    height: 408px;
-    margin-top: -336px;
+    height: 420px;
+    margin-top: -220px;
     margin-left: 4px;
     padding-left: 32px;
+}
+.overviewheader{
+    transform: rotate(90deg);
+    margin-left: 97%;
+    margin-right: 24px;
+    font-size: 33px;
 }
 .overview h1{
     color: #c29129;
@@ -239,6 +312,13 @@ li {
     margin-top: 2px;
     display: table;
 }
+.priceheader{
+    transform: rotate(90deg);
+    margin-left: 98%;
+    margin-right: 18px;
+    font-size: 32px;
+    color: var(--orange);
+}
 .content_price{
   border-collapse: collapse;
   box-shadow: 0 5px 10px #e1e5ee ;
@@ -266,6 +346,61 @@ td{
     padding: 6px 11px;
     text-align: center;
     border: none;
+    cursor: pointer;
+}
+.click_here:hover,
+.click_here:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+}
+.pricedetails{
+    width: 51%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -53%;
+    margin-left: 61%;
+}
+.costing_details{
+    width: 286px;
+    height: 217px;
+}
+.pricedetailshoverdiv{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -100%;
+    width: 53%;
+    height: 100%;
+    background: rgba(0,0, 0,0.5);
+    z-index: 1;
+    display: flex;
+
+    -webkit-transition: bottom ease-in-out .30s;
+    -moz-transition: bottom ease-in-out .30s;
+    transition: bottom ease-in-out .30s;
+}
+.pricedetails:hover .pricedetailshoverdiv{
+    bottom: 0;
+}
+.price_detailsbtn{
+    margin-left: 25%;
+    margin-top: 31%;
+    width: 121px;
+    height: 26px;
+    background: white;
+    font-size: 18px;
+    padding: 5px;
+}
+.price_detailsbtn a{
+    text-decoration: none;
+    color: black;
+}
+.compcostingdetails{
+    margin-left: 61%;
+    font-size: 26px;
+    background: var(--orange);
+    text-decoration: none;
+    color: whitesmoke;
 }
 /* end */
 
@@ -273,13 +408,21 @@ td{
 .site_floor_plan{
     width: 78%;
     height: 600px;
+    margin-bottom: 12px;
+    background: rgb(255, 251, 251);
+}
+.siteplanheader{
+    transform: rotate(90deg);
+    margin-left: 97%;
+    margin-right: 24px;
+    font-size: 33px;
 }
 .master_plan{
     width: 70%;
     position: relative;
     overflow: hidden;
     margin-left: 30%;
-    margin-top: 50px
+    margin-top: 10px
 }
 .Title{
     margin-left: 45px;
@@ -320,34 +463,30 @@ td{
     bottom: 0;
 }
 /* ---------------------------------- */
-.floor-plan{
+.Mainfloorplan{
+    position: relative;
     width: 100%;
-    height: 300px;
     display: flex;
 }
-.floorplandiv1{
-    width: 35%;
+.floor_plan{
+    width: 58%;
     position: relative;
-}
-.floorplandiv2{
-    width: 35%;
-    position: relative;
-}
-.floorplandiv3{
-    width: 35%;
-    position: relative;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: 50px
 }
 .floor_img{
-    width: 92%;
-    height: 219px;
+    width: 88%;
+    height: 220px;
+    filter: blur(1.1px);
 }
 .floor_plan_hoverdiv{
     position: absolute;
-    top: 1%;
+    top: auto;
     left: 0;
     bottom: -100%;
-    width: 92%;
-    height: 73%;
+    width: 88%;
+    height: 100%;
     background: rgba(0,0, 0,0.5);
     z-index: 1;
     display: flex;
@@ -356,4 +495,174 @@ td{
     -moz-transition: bottom ease-in-out .30s;
     transition: bottom ease-in-out .30s;
 }
-/*  */
+.floor_plan:hover .floor_plan_hoverdiv{
+    bottom: 0;
+}
+.enquiry1{
+    margin-left: 84px;
+    margin-top: 31%;
+    width: 98px;
+    background: white;
+    height: 26px;
+}
+.enquiry1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+/* end */
+
+/* amenities slider */
+.Amenities{
+    width: 78%;
+    height: 390px;
+    background-color: rgb(233, 222, 222);
+}
+.main-container{
+    width: 84%;
+    display:block;
+    margin-left: 46px;
+    background-color: whitesmoke;
+    height: 90%;
+}
+.slidesdiv{
+    width: 100px;
+    height: 100px;
+}
+.slides{
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.list{
+    display: flex;
+    margin-bottom: 51px;
+    margin-left: 71px;
+    margin-top: 44px;
+    margin-right: 15px;
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight:800;
+}
+.checkmarkimg{
+    width: 30px;
+    height: 20px;
+}
+.slidericons{
+    width: 40px;
+    height: 50px;
+}
+/* end */
+
+/* gallery */
+.galley-container{
+    width: 78%;
+    height: 380px;
+    margin-bottom: 12px;
+    background: rgb(255, 251, 251);
+}
+.gallery{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+.gallery-Image{
+    padding: 10px;
+    margin-left: 8px;
+}
+.gallery-Image img{
+    width: 208px;
+    display: block;
+}
+.gallery-Image:hover img{
+     transform: scale(1.9) ease-in-out;
+    -webkit-transform: scale(1.1);
+}
+/* ------------end----------- */
+
+/* Map Container  */
+.Location-container{
+    width: 78%;
+    height: 560px;
+    margin-bottom: 12px;
+    background: rgb(255, 251, 251);
+}
+.mapviewheading{
+    color: var(--orange);
+    padding: 27px;
+    font-size: 31px;
+    font-weight: bolder;
+}
+.Locationimgheading{
+    color: var(--orange);
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: -53px;
+    margin-left: 70%;
+}
+.Map-view{
+    padding-left: 30px;
+}
+.locationmap{
+    width: 58%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 62%;
+    margin-top: -27%;
+}
+.locationmap_img{
+    width: 58%;
+    height: 241px;
+    filter: blur(0.4px);
+}
+.location_map_hoverdiv{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -100%;
+    width: 58%;
+    height: 100%;
+    background: rgba(0,0, 0,0.5);
+    z-index: 1;
+    display: flex;
+
+    -webkit-transition: bottom ease-in-out .30s;
+    -moz-transition: bottom ease-in-out .30s;
+    transition: bottom ease-in-out .30s;
+}
+.locationmap:hover .location_map_hoverdiv{
+    bottom: 0;
+}
+.locationdetails{
+    margin-left: 100px;
+    margin-top: 30%;
+    width: 153px;
+    background: white;
+    height: 26px;
+}
+.locationdetails a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.location_icon_img{
+    width: 30px;
+    height: 20px;
+}
+.location-features{
+    width: 98%;
+    display: flex;
+    margin-top: 9%;
+    margin-left: 20px;
+    gap: 46px;
+}
+.featuresitem{
+    padding-bottom: 13px;
+}
