@@ -1,0 +1,123 @@
+.popupformcenter{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    background-color: rgb(236, 228, 228);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.closeBtn{
+    margin-left: 95%;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.FormFeatures{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(180, 179, 179);
+    height: 86%;
+    margin-top: 5%;
+}
+.FormFeatures h4{
+    font-size: 13px;
+    margin-top: 11%;
+    margin-left: 22px;
+}
+.FormFeatures h5{
+    margin-left: 22px;
+    font-size: 13px;
+}
+.popupicons{
+    width: 74px;
+    height: 49px;
+    margin-top: -5%;
+    margin-left: 28px;
+}    
+.popuplogo{
+    width: 253px;
+    height: 71px;
+    margin-top: -72%;
+    margin-left: 39%;
+}                                                                                                           
+.container h3{
+    margin-top: -55%;;
+    margin-left: 34%;
+    font-size: 18px;
+}
+.popupform{
+    margin-left: 30%;
+}
+.text{
+    width: 99%;
+    overflow: hidden;
+    font-size: 18px;
+    border-bottom: 1px solid whitesmoke;
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.text:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.mobile{
+    width: 99%;
+    overflow: hidden;
+    font-size: 18px;
+    border-bottom: 1px solid whitesmoke;
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.mobile:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.email{
+    width: 99%;
+    overflow: hidden;
+    font-size: 18px;
+    border-bottom: 1px solid whitesmoke; 
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.email:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.instantCallback{
+    margin-left: 75px;
+    width: 54%;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    background: orange;
+    border-radius: 5px;
+    border: 1px;
+}
+.contactNo{
+    width: 100%;
+    background: orange;
+    margin-top: -17px;
+    height: 28px;
+}
+.contactNo h3{
+    margin-left: 38%;
+}
