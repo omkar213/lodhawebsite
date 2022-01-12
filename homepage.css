@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root{
     --orange: #c29129;
+    --lightorange: #fdec01;
 }
 *{
     margin: 0;
@@ -42,13 +43,13 @@ body{
 .nav_link:hover{
     background-color: blanchedalmond;
 }
-nav .navigation-bar ul li:active{
+nav ul li a:active{
     background-color: #e7b623;
     transition: 0.3  ease #e7b623;
 }
-nav .navigation-bar ul li:active a{
+/* nav .navigation-bar ul li:active a{
     color: whitesmoke;
-}
+} */
 /*------------------*/
 
 /*css for side bar right*/
@@ -377,12 +378,7 @@ input[type="checkbox"]{
     margin-left: 4px;
     padding-left: 32px;
 }
-.overviewheader{
-    transform: rotate(90deg);
-    margin-left: 97%;
-    margin-right: 24px;
-    font-size: 33px;
-}
+
 .overview h1{
     color: #c29129;
 }
@@ -443,13 +439,7 @@ input[type="checkbox"]{
     margin-top: 2px;
     display: table;
 }
-.priceheader{
-    transform: rotate(90deg);
-    margin-left: 98%;
-    margin-right: 18px;
-    font-size: 32px;
-    color: var(--orange);
-}
+
 .content_price{
   border-collapse: collapse;
   box-shadow: 0 5px 10px #e1e5ee ;
@@ -796,4 +786,63 @@ td{
 }
 .featuresitem{
     padding-bottom: 13px;
+}
+
+/* site tour css starts from here */
+.SiteTour{
+    width: 78%;
+    height: 560px;
+    margin-bottom: 12px;
+    background: rgb(255, 251, 251);
+}
+.videotourbanner{
+    width: 83%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.playicondiv{
+    margin-top: -23%;
+    margin-left: 21px;
+    position: absolute;
+    z-index: 1;
+    width: 870px;
+    background: rgba(0, 0, 0, 0.664);
+    height: 190px;
+}
+.playicon{
+    width: 110px;
+    margin-left: 44%;
+    cursor: pointer;
+}
+.playicondiv h1{
+    color: white;
+    margin-left: 35%;
+    font-size: 34px;
+}
+.playicondiv h1 a{
+    text-decoration: none;
+    color: white;
+}
+.playicondiv h1:hover::before{
+    transform: scale(1.1);
+}
+.playicondiv h1:hover{
+    color: var(--lightorange);
+    text-shadow: 0 0 5px var(--lightorange);
+}
+.playicondiv h2{
+    color: white;
+    margin-left: 27%;
+    font-size: 27px;
+}
+.playicondiv h2 a{
+    text-decoration: none;
+    color: white;
+}
+.playicondiv h2:hover::before{
+    transform: scale(1.1);
+}
+.playicondiv h2:hover{
+    color: var(--lightorange);
+    text-shadow: 0 0 5px var(--lightorange);
 }

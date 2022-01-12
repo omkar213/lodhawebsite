@@ -91,7 +91,6 @@
       </div>
 
       <div class="overview" id="home">
-        <h1 class="overviewheader">Overview</h1>
         <h1> Lodha The Park<h1>
             <h3> At Worli, Mumbai</h3>
             <p>Lodha The Park in Worli is crafted to beat the expectations of its aspiring residents.
@@ -175,7 +174,6 @@
       </div>
       <!-- price section starts from here -->
       <div class="price" id="price">
-        <h1 class="priceheader">Price</h1>
         <table class="content_price">
           <thead>
             <tr>
@@ -274,10 +272,6 @@
 
       <!-- site floor plan starts from here -->
       <div class="site_floor_plan" id="floor">
-        <!-- <h1 class="siteplanheader">Site 
-         <h1 class="siteplanheader">&</h1> 
-         <h1 class="siteplanheader">Floor 
-         <h1 class="siteplanheader"> Plan</h1> -->
         <h2 class="Title">Master Plan</h2>
         <div class="master_plan">
           <img src="Images/master_plan.jpeg" class="master_img" />
@@ -376,8 +370,8 @@
           <div class="gallery-Image"><img src="Images/gallery8.jpg" alt="" /></div>
         </div>
       </div>
-
-      <div class="Location-container">
+     <!-- Location & Map  -->
+      <div class="Location-container" id="location">
         <h2 class="mapviewheading">Map View </h2>
         <h2 class="Locationimgheading">Location Map</h2>
         <div class="Map-view">
@@ -420,11 +414,13 @@
       </div>
     
     <!-- Video Tour  -->
-      <div class="SiteTour">
+      <div class="SiteTour" id="tour">
        <div>
          <img src="Images/banner.jpg" class="videotourbanner"/>
-         <div>
-             <img src="Images/videoplayicon.png"/>
+         <div class="playicondiv">
+             <img src="Images/videoplayicon1.png" class="playicon"/>
+             <h1><a href="">VIRTUAL TOUR</a></h1>
+             <h2><a href="">Lodha The Park At Worli Mumbai</a></h2>
          </div>
       </div>
 
@@ -480,6 +476,7 @@
         slidesToScroll: 1
       });
     </script>
+    <script src="homepage.js"></script>
 </body>
 
 </html>
